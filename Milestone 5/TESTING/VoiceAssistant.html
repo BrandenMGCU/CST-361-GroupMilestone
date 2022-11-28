@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+</head>
+<body>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #525fa2;
+    color: white;
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  </style>
+  </head>
+  <body>
+  
+  <!-- Top navigation -->
+  <div class="topnav">
+  
+    <!-- Centered link -->
+    <div class="topnav-centered">
+      <a href="/VoiceAssistant.html" class="active">Voice Assistant</a>
+    </div>
+    
+    <!-- Left-aligned links (default) -->
+    <a href="/Home.html">Home</a>
+    <a href="/">Contact</a>
+    
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <a href="#search">Search</a>
+      <a href="#about">About</a>
+    </div>
+    
+  </div>
+  
+<script>
+div id="ovoMenu"&gt;
+    &lt;a href="?i=1"&gt;Item 1&lt;/a&gt;
+    &lt;a href="?i=2"&gt;Item 2&lt;/a&gt;
+    &lt;a href="?i=3"&gt;Item 3&lt;/a&gt;
+    &lt;div class="right"&gt;
+        &lt;a href="?i=4"&gt;Item 4&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+.right {
+    text-align: right;
+    float: right;
+}
+
+#ovoMenu {
+    margin: 0px;
+    padding: 0px;
+    /* Size properties */
+    padding-top: 5px;
+    /* Font properties */
+    color: #FFFFFF;
+    font-size: 80%;
+    /* Create a gradient */
+    background-color: #418CE5;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#418CE5', endColorstr='#256EC6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#418CE5), to(#256EC6));
+    background: -moz-linear-gradient(top, #418CE5, #256EC6);
+    /* Links are not allowed on another line */
+    white-space: nowrap;
+}
+
+#ovoMenu a:link, #ovoMenu a:visited, #ovoMenu a:active, #ovoMenu a:hover {
+    color: #FFFFFF;
+    /* Corners */
+    -moz-border-radius-topleft: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-right-radius: 4px;
+    /* Size */
+    margin-left: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    /* Display it as a block */
+    display: inline-block;
+    /* Height of the link */
+    height: 30px;
+    line-height: 30px;
+    /* No underline */
+    text-decoration: none;
+    /* No outline */
+    outline: 0;
+}
+
+#ovoMenu a:hover {
+    /* Other background */
+    background-color: #13529E;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#13529E', endColorstr='#084084');
+    background: -webkit-gradient(linear, left top, left bottom, from(#13529E), to(#084084));
+    background: -moz-linear-gradient(top, #13529E, #084084);
+}
+
+#ovoMenu a.active:link, #ovoMenu a.active:visited, #ovoMenu a.active:active, #ovoMenu a.active:hover {
+    color: #333333;
+    font-weight: bold;
+    background: none;
+    background-color: #E9E9E9;
+}
+</script>
+
+
+
+
+
+
+<h1 style="text-align: center">Welcome to the Digital Voice Assistant!</h1>
+
+
+<!-- This will contain the Digital Voice Assistant Content -->
+
+<script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<div class="alan-btn"></div>
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "86166ba24c3e73b84ea0bcb6c329c7192e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
+
+
+
+<!-- Working to add a login and registration page!-->>
+
+
+</body>
+</html>
